@@ -2,7 +2,7 @@
 #include "LCDPRINCIPALS.h"
 
 void initLCD(){
-	DDRi |= (0x0F << x);          // dados (PB2–PB5)
+	DDRi |= (0x0F << x);          // dados (PB2~PB5)
 	DDRi |= (1 << E) | (1 << RS); // controle (PB0, PB1)
 	
 	clearBit(PORTi, E);
